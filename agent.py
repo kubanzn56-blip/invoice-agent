@@ -28,7 +28,7 @@ FIRMA_NAZWA = os.getenv("FIRMA_NAZWA", "Firma")
 AUTO_WYSLIJ = os.getenv("AUTO_WYSLIJ", "true").lower() == "true"
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-2.5-flash")
+model = genai.GenerativeModel("gemini-2.5-flash-lite")
 
 
 def get_service(api, wersja):
